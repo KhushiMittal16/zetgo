@@ -46,7 +46,7 @@ export default function BasicCard() {
       <CardContent>
 
         <form>
-          <div>
+          <div className='checkin'>
           <div className='head'>Check-in</div>
           <input type="date" placeholder="Add date"/>
           {/* <TextField
@@ -56,7 +56,7 @@ export default function BasicCard() {
             defaultValue="2017-05-24"
             InputLabelProps={{
               shrink: true,
-            }}
+            }} 
           /> */}
           {/* <DatePicker onChange={setChngdate} value={chngdate} /> */}
           {/* <button onChange={setChngdate} value={chngdate}>date</button> */}
@@ -79,7 +79,7 @@ export default function BasicCard() {
               <i class="fa-solid fa-user"></i> 
               <div className='typecount'>{(child>0)?`${adult} Adult, ${child} Child`: `${adult} Adult`}</div>
             </button>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style={{width:"90%"}}>
+            <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style={{width:"90%"}}>
                       <li className='listitem1'>
                         <div className='guestType'>adult</div>
                         <div className='incDecbtn'>

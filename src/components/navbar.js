@@ -13,7 +13,7 @@ export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1}}>
       <AppBar position="static" sx={{bgcolor:"white"}}>
-        <Toolbar>       
+        <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, color:"#315680", fontFamily:"Nexa Bold", fontSize:"260%", fontWeight:"700"}}>
             Zetgo
           </Typography>

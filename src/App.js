@@ -6,7 +6,9 @@ import MainCode from './components/MainCode';
 function App() {
   return (
     <div className="App">
-      <ButtonAppBar/>
+      <div className='nav'>
+        <ButtonAppBar/>
+      </div>
       <MainCode/>
     </div>
   );

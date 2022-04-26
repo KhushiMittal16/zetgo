@@ -26,7 +26,6 @@ h1{
     padding: 5%;
     /* display: flex; */
     justify-content: space-between;
-
 }
  
 .carddesg{
@@ -38,6 +37,10 @@ h1{
 .head{
     font-size: 160%;
     font-weight: 800;
+}
+
+.nav{
+    width: 100vw;
 }
 
 input{
@@ -61,7 +64,7 @@ form{
     justify-content: space-evenly;
 }
 
-.guest_search{
+.guest_search{ 
     display: flex;
     justify-content: space-evenly;
     padding-top: 5%;
@@ -73,8 +76,9 @@ form{
     border: none;
     border-bottom: 1px solid #DFEAF5;
     background-color: #fff;
-    font-size: 130%;
+    font-size: 130%; 
 }
+
 
 .typecount{
     margin-left: 2%;
@@ -94,6 +98,7 @@ form{
 }
 
 .listitem1{
+    width: 130%;
     display: flex;
     justify-content: space-between;
     padding: 2%;
@@ -105,11 +110,8 @@ i{
     color: #315680;
 }
 
-/* .guests{
-    width: 100%;
-} */
-
 .listitem2{
+    width: 130%;
     display: flex;
     justify-content: space-between;
     padding: 2%;
