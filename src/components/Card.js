@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
+// import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 import DatePicker from 'react-date-picker';
+import "react-datepicker/dist/react-datepicker.css";
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import { useState } from 'react';
@@ -10,6 +12,7 @@ export default function BasicCard() {
   const [adult, setAdult] = useState(1);
   const [child, setChild] = useState(0);
   const [chngdate, setChngdate] = useState(new Date());
+  // const [startDate, setStartDate] = useState(new Date());
 
   const handleChangeNegAdult=()=>{
     const adultDec= adult-1;
@@ -38,10 +41,6 @@ export default function BasicCard() {
       setChild(child)
   }
 
-  const dateChng=()=>{
-
-  }
-
   return ( 
     <Card className='checkcard' sx={{ minWidth: 275 }}>
       <CardContent>
@@ -61,10 +60,14 @@ export default function BasicCard() {
           /> */}
           {/* <DatePicker onChange={setChngdate} value={chngdate} /> */}
           {/* <button onChange={setChngdate} value={chngdate}>date</button> */}
+              {/* <DatePicker selected={startDate} onChange={date => setStartDate(date)}/> */}
           </div>
+
           <div>
-          <div  className='head'>Check-out</div>
+          <div className='head'>Check-out</div>
+          {/* <DatePicker onChange={setChngdate} value={chngdate} /> */}
           <input type="date" placeholder="Add date"/>
+              {/* <DatePicker selected={startDate} onChange={date => setStartDate(date)}/> */}
           </div>
         </form>
         
@@ -80,18 +83,18 @@ export default function BasicCard() {
                       <li className='listitem1'>
                         <div className='guestType'>adult</div>
                         <div className='incDecbtn'>
-                          <button className='dropdownbtn' onClick={handleChangeNegAdult}><div className='btnneg'>-</div></button>
+                          <button className='dropdownbtn' onClick={handleChangeNegAdult}><div>-</div></button>
                           <div className='count'> {adult}</div>
-                          <button className='dropdownbtn' onClick={handleChangePosAdult}><div className='btnpos'>+</div></button>
+                          <button className='dropdownbtn' onClick={handleChangePosAdult}><div>+</div></button>
                         </div>
                       </li>
 
                       <li className='listitem2'> 
                         <div className='guestType'>children</div>
                         <div className='incDecbtn'>
-                          <button className='dropdownbtn' onClick={handleChangeNegChild}><div className='btnneg'>-</div></button>
+                          <button className='dropdownbtn' onClick={handleChangeNegChild}><div>-</div></button>
                             <div className='count'>{child}</div>
-                          <button className='dropdownbtn' onClick={handleChangePosChild}><div className='btnpos'>+</div></button>
+                          <button className='dropdownbtn' onClick={handleChangePosChild}><div>+</div></button>
                         </div>
                       </li>
             </div>

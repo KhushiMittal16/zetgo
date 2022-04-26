@@ -5,38 +5,52 @@
     padding: 4vh;
     font-family: Mulish;
 }
- 
+
+h1{
+    font-size: 250%;
+    font-weight: 900;
+}
+
 .para{
     border-left: solid 2px #315680;
     font-family: Open Sans;
+    font-weight: 400;
     padding: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
 }
  
 .checkcard{
     width: 90vw;
     margin-top: 2vh;
-}
+    padding: 5%;
+    /* display: flex; */
+    justify-content: space-between;
 
+}
+ 
 .carddesg{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .head{
+    font-size: 160%;
     font-weight: 800;
 }
 
 input{
-    width: 100%;
+    /* width: 100%; */
     border: none;
     border-bottom: solid 1px #DFEAF5;
-    margin-right: 10px;
+    font-size: 150%;
+    /* margin-right: 10px; */
 }
 
-input:focus{
+input:focus-visible{
     width: 100%;
-    border: none;
+    border: black;
     border-bottom: solid 1px #DFEAF5;
     margin-right: 10px;
 }
@@ -44,22 +58,22 @@ input:focus{
 form{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .guest_search{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
     padding-top: 5%;
 }
 
 .dropdownMenu{
-    width: 90%;
+    width: 100%;
     display: flex;
     border: none;
     border-bottom: 1px solid #DFEAF5;
     background-color: #fff;
+    font-size: 130%;
 }
 
 .typecount{
@@ -67,13 +81,16 @@ form{
 }
 
 .search{
-    padding: 3% 15%;
+    height: 15%;
+    padding: 2% 12%;
     background-color: #315680;
+    /* width: 40%; */
     border: none;
     border-radius: 1vh;
     color: #fff;
     font-family: Mulish;
     font-weight: 800;
+    font-size: 150%;
 }
 
 .listitem1{
@@ -83,12 +100,14 @@ form{
 }
 
 i{
-    margin: 2%;
+    margin-top: 2%;
+    margin-right: -2%;
+    color: #315680;
 }
 
-.guests{
-    width: 90%;
-}
+/* .guests{
+    width: 100%;
+} */
 
 .listitem2{
     display: flex;
@@ -97,17 +116,13 @@ i{
 }
 
 .guestType{
-    font-family: Mulish;
+    font-size: 136%;
     font-weight: 800;
 }
 
-.iconbtn{
-    color: #315680;
-}
-
 .dropdownbtn{
-    /* width: 4%; */
-    margin-right: 2%;
+    /* width: 100%; */
+    /* margin-right: 2%; */
     box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #315680;
@@ -125,7 +140,7 @@ i{
     margin-right: 20%;
 }
 
-@media screen and (max-width:384px){
+@media screen and (max-width:428px){
     form{
         display: block;
         justify-content: center;
@@ -140,7 +155,7 @@ i{
     .guest_search{
         margin-top: -5vh;
         display: block;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center; 
     }
 
@@ -151,12 +166,12 @@ i{
         align-items: center;
         justify-content: center;
     }
-    .guests{
+    /* .guests{
         width: 100%;
         display: block;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 
     .dropdownMenu{
         width: 100%;

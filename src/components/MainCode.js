@@ -8,7 +8,7 @@ const MainCode = () => {
         <h1>
         Zetgo — amazing hostel for the free spirited traveler
         </h1>
-        <div className='para'>
+        <div className='para' style={{fontSize:"166%"}}>
         Egestas pretium aenean pharetra magna ac. Et tortor consequat id porta nibh venenatis cras sed. Vel turpis nunc eget lorem dolor sed
         </div>
         <div className='carddesg'>
