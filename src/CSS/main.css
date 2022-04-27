@@ -1,5 +1,5 @@
 .completecode{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #F8FAFD;
     padding: 4vh;
@@ -40,11 +40,11 @@ h1{
 }
 
 .nav{
-    width: 100vw;
+    width: 100%;
 }
 
 input{
-    /* width: 100%; */
+    /* width: 100%; */ 
     border: none;
     border-bottom: solid 1px #DFEAF5;
     font-size: 150%;
@@ -140,6 +140,10 @@ i{
 .count{
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.guests{
+    width: 20%;
 }
 
 @media screen and (max-width:428px){
