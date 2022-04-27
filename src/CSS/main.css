@@ -145,6 +145,14 @@ i{
 } */
 
 @media screen and (max-width:428px){
+    .completecode{
+        width: 100%;
+        height: 100%;
+        background-color: #F8FAFD;
+        padding: 4vh;
+        font-family: Mulish;
+    }
+
     form{
         display: block;
         justify-content: center;

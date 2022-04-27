@@ -1,7 +1,8 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-// import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
-import DatePicker from 'react-date-picker';
+// import DatePicker from 'react-date-picker';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import "react-datepicker/dist/react-datepicker.css";
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -44,23 +45,23 @@ export default function BasicCard() {
   return ( 
     <Card className='checkcard' sx={{ minWidth: 275 }}>
       <CardContent>
-
+ 
         <form>
           <div className='checkin'>
           <div className='head'>Check-in</div>
           <input type="date" placeholder="Add date"/>
-          {/* <TextField
-            id="date"
-            label="Choose your birthdate"
-            type="date"
-            defaultValue="2017-05-24"
-            InputLabelProps={{
-              shrink: true,
-            }} 
-          /> */}
-          {/* <DatePicker onChange={setChngdate} value={chngdate} /> */}
+          {/* <DatePicker />; */}
           {/* <button onChange={setChngdate} value={chngdate}>date</button> */}
               {/* <DatePicker selected={startDate} onChange={date => setStartDate(date)}/> */}
+          
+              {/* <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><Calendar/></li>
+  </ul>
+</div> */}
           </div>
 
           <div>
@@ -68,6 +69,7 @@ export default function BasicCard() {
           {/* <DatePicker onChange={setChngdate} value={chngdate} /> */}
           <input type="date" placeholder="Add date"/>
               {/* <DatePicker selected={startDate} onChange={date => setStartDate(date)}/> */}
+          
           </div>
         </form>
         
